@@ -57,10 +57,9 @@
 <ul id="sponsor_carousel" class="jcarousel-skin-sponsor">
   <% Sponsor.all.each do |sponsor| %>
     <li>
-      <%= image_tag sponsor.image_path %>
-      <p>
-        <%= sponsor.name %>
-      </p>
+      <%= link_to sponsor.url do %>
+        <%= image_tag sponsor.image_path %>
+      <% end %>
     </li>
   <% end %>
 </ul>

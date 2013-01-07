@@ -1,9 +1,13 @@
+.jcarousel-container li {
+    color: #58585a
+}
+
 .jcarousel-skin-tango .jcarousel-container {
-  background: #58585a url(../images/schedule_header.jpg) no-repeat top right;
+  background: #FFFFFF url(../images/schedule_header.jpg) no-repeat top right;
 }
 
 .jcarousel-skin-sponsor .jcarousel-container {
-  background: #58585a url(../images/sponsor_header.jpg) no-repeat top right;
+  background: #FFFFFF url(../images/sponsor_header.jpg) no-repeat top right;
 }
 
 .jcarousel-skin-tango .jcarousel-direction-rtl, .jcarousel-skin-speaker .jcarousel-direction-rtl, .jcarousel-skin-sponsor  .jcarousel-direction-rtl  {
