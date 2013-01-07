@@ -8,7 +8,7 @@
 <section id="speakers">
 <h3>Speakers</h3> <a href="/speakers" class="yellow-link-lower">View All >></a>
 <ul id="speaker_carousel" class="jcarousel-skin-speaker">
-  <%= Speaker.all.each do |speaker| %>
+  <%= Speaker.in_random_order.each do |speaker| %>
     <li>
       <%= image_tag speaker.image_path %>
       <%= speaker.name %>
