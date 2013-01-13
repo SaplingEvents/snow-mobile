@@ -9,6 +9,7 @@ SnowMobile::Application.routes.draw do
 
   get "/lodging" => 'home#lodging', :as => 'lodging'
   get "/register" => 'home#register'
+  get "/schedule" => 'home#schedule'
 
   root :to => "home#home"
 end
