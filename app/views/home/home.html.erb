@@ -6,7 +6,7 @@
 <%= image_tag "phone_in_snow.jpg" %>
 </section>
 <section id="speakers">
-<h3>Speakers</h3> <a href="/speakers" class="yellow-link-lower">View All >></a>
+<h3>Speakers</h3> <a href="/speakers" class="yellow-link-lower" onclick="_gaq.push(['_trackEvent', 'More Information', 'Click', 'View All Speakers']);">View All >></a>
 <ul id="speaker_carousel" class="jcarousel-skin-speaker">
   <%= Speaker.in_random_order.each do |speaker| %>
     <li>
