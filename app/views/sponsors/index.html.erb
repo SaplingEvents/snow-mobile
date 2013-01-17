@@ -14,7 +14,7 @@
       <% end %>
       <% if sponsor.url %>
         <p>Website:</p>
-        <%= link_to sponsor.url, sponsor.url %>
+        <%= link_to sponsor.url.sub('http://','').sub('www.','').truncate(20), sponsor.url %>
       <% end %>
     </div>
     <div class="sponsor_logo"><%= image_tag sponsor.image_path %></div>

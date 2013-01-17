@@ -356,6 +356,10 @@ p.speaker_name {
   background-color: #58585a;
 }
 
+.sponsor_info a {
+  font-size: 1.5em;
+}
+
 .speaker_info a {
   padding-left: 10px;
   font-size: 1.5em;
