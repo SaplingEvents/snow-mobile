@@ -607,6 +607,7 @@ header.vevent h2 time{ display: block; }
 
   #contact{
     clear: both;
+    padding-bottom: 50px;
   }
   #menu ul{
 
