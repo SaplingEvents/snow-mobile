@@ -572,7 +572,8 @@ header.vevent h2 time{ display: block; }
   }
 
   .leftcol-wide {
-    width: 63%;
+    width: 51%;
+    padding: 0 6%;
   }
 
   .leftcol-narrow {
