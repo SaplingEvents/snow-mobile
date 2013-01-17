@@ -43,11 +43,11 @@
         </header>
         <nav id="menu">
         <ul>
-          <li><%=link_to "Speakers", speakers_path %></li>
-          <li><%=link_to "Schedule", schedule_path %></li>
-          <li><%=link_to "Sponsors", sponsors_path %></li>
-          <li><%=link_to "Lodging", lodging_path %></li>
-          <li><a href="http://2013.snow-mobile.org">Register</a></li>
+          <li><%=link_to "Speakers", speakers_path, :onclick => "_gaq.push(['_trackEvent', 'Main Navigation', 'Click', 'Speakers']);"%></li>
+          <li><%=link_to "Schedule", schedule_path, :onclick => "_gaq.push(['_trackEvent', 'Main Navigation', 'Click', 'Schedule']);" %></li>
+          <li><%=link_to "Sponsors", sponsors_path, :onclick => "_gaq.push(['_trackEvent', 'Main Navigation', 'Click', 'Sponsors']);"  %></li>
+          <li><%=link_to "Lodging", lodging_path, :onclick => "_gaq.push(['_trackEvent', 'Main Navigation', 'Click', 'Lodging']);"   %></li>
+          <li><a href="http://2013.snow-mobile.org" onclick="_gaq.push(['_trackEvent', 'Main Navigation', 'Click', 'Register']);">Register</a></li>
         </ul>
         </nav>
         <%= yield %>
@@ -55,7 +55,7 @@
     </div>
 
     <footer id="snowdrifts">
-    <p>Copyright &copy; 2012-2013 Snow * Mobile Conference - <a href="mailto:contact@snow-mobile.org">contact@snow-mobile.org</a></p>
+    <p>Copyright &copy; 2012-2013 Snow * Mobile Conference - <a href="mailto:contact@snow-mobile.org" onclick="_gaq.push(['_trackEvent', 'Footer', 'Click', 'Contact via Email']);">contact@snow-mobile.org</a></p>
     </footer>
 
     <script type="text/javascript">
