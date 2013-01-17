@@ -12,7 +12,7 @@
     <br />
     <br />
     <p>Website:</p>
-    <%= link_to speaker.website_url, speaker.website_url %>
+    <%= link_to speaker.website_url.sub('http://','').sub('www.','').truncate(20), speaker.website_url %>
   </div>
   <div class="filler"><hr></div>
 <% end %>

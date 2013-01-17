@@ -339,7 +339,6 @@ p.speaker_name {
 
 .speaker_info  {
   float: left;
-  /* width: 20%; */
   padding: 20px;
   margin: 5px 0 15px 20px;
   font-size: 13px;
@@ -359,6 +358,7 @@ p.speaker_name {
 
 .speaker_info a {
   padding-left: 10px;
+  font-size: 1.5em;
 }
 
 .filler {
