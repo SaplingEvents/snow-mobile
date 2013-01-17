@@ -11,7 +11,9 @@
   <%= Speaker.in_random_order.each do |speaker| %>
     <li>
       <%= image_tag speaker.image_path %>
-      <%= speaker.name %>
+      <p class="speaker_name">
+        <%= speaker.name %>
+      </p>
       <br />
     </li>
   <% end %>

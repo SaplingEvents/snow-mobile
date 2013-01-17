@@ -317,6 +317,10 @@ a.yellow-link-lower-right {
   /* max-width: 15%; */
 }
 
+p.speaker_name {
+  text-align: center;
+}
+
 .sponsor_logo {
   width: 40%;
 }
