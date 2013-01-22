@@ -96,6 +96,7 @@ GEM
     guard-readme-on-github (0.0.1)
       guard (>= 0.10.0)
       rdiscount (~> 1.6)
+    haml (3.1.7)
     has_scope (0.5.1)
     heroku (2.25.0)
       launchy (>= 0.3.2)
@@ -240,6 +241,7 @@ DEPENDENCIES
   cucumber-rails
   guard
   guard-readme-on-github
+  haml
   heroku
   heroku_san
   jquery-rails
