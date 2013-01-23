@@ -1,7 +1,20 @@
 %h1
   Friday, February 15, 2013
 %aside.schedule
-  - Talk.all.each do |talk|
+  - Talk.on_friday.each do |talk|
+    %article.vevent{ :class => (talk.plenary? ? nil : "vevent-talk") }
+      %h1.summary
+        = talk.title
+      %time.dtstart{:datetime => talk.start.to_time.iso8601}
+        = talk.start.strftime('%I:%M')
+      %h2
+        = talk.speaker
+      %p.description
+        = talk.description
+%h1
+  Saturday, February 16, 2013
+%aside.schedule
+  - Talk.on_saturday.each do |talk|
     %article.vevent{ :class => (talk.plenary? ? nil : "vevent-talk") }
       %h1.summary
         = talk.title
