@@ -6,10 +6,10 @@
       %h1.summary
         = talk.title
       %time.dtstart{:datetime => talk.start.to_time.iso8601}
-        = talk.start.hour
+        = talk.start.strftime('%I')
         \:
         %span.mins
-          = talk.start.min
+          = talk.start.strftime('%M')
       %h2
         = talk.speaker
       %p.description
