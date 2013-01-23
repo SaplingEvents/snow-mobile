@@ -2,7 +2,7 @@
   Friday, February 15, 2013
 %aside.schedule
   - Talk.all.each do |talk|
-    %article.vevent{ :class => (talk.plenary? ? "vevent-talk" : nil) }
+    %article.vevent{ :class => (talk.plenary? ? nil : "vevent-talk") }
       %h1.summary
         = talk.title
       %time.dtstart{:datetime => talk.start.to_time.iso8601}
