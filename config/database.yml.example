@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: pg_development
+  database: snow_mobile_development
   username:
   pool: 5
 
@@ -11,7 +11,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: pg_test
+  database: snow_mobile_test
   username:
   pool: 5
 
@@ -19,6 +19,6 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: pg_production
+  database: snow_mobile_production
   username:
   pool: 5
